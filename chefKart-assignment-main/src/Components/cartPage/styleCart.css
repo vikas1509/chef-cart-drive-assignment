@@ -1,0 +1,31 @@
+.cart{
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-item-card{
+    margin-top: 1rem;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    background-color: rgb(253, 255, 163);
+}
+
+.cartPopUp div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.cartImg{
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+
+}

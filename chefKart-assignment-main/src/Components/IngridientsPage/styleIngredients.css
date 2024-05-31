@@ -1,0 +1,78 @@
+.ingrdients-page{
+    margin-inline: 3rem;
+    position: relative;
+}
+
+.ingredients-image{
+    width: 15rem;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    transform: translate(-0% , -26%);
+    object-fit: cover;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.hero{
+    margin-block: 6rem;
+}
+
+
+.hero div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-block: 2rem;
+    font-size: 1.5rem;
+}
+
+.content-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
+
+.content-table td{
+    width: 50%;
+    padding-block: .3rem;
+}
+
+.ingredients, .appliances{
+    margin-inline-start: 1rem;
+}
+
+.ingredients-hero , .appliances-hero{
+    padding-block: .5rem;
+    margin-block-end: 1rem;
+    border-bottom: 1px solid rgb(210, 209, 209);
+}
+
+.vegetables , .spices{
+    margin-inline-start: 1rem;
+    margin-block-end: 2rem;
+}
+.appliance{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+#appliance-card{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(186, 193, 199);
+    border-radius: 10px;
+}
+
+
+
+

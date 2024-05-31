@@ -1,0 +1,19 @@
+{
+  "name": "chefkart-assignment-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikas1509/chef-cart-drive-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vikas1509/chef-cart-drive-assignment/issues"
+  },
+  "homepage": "https://github.com/vikas1509/chef-cart-drive-assignment#readme",
+  "description": ""
+}

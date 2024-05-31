@@ -1,0 +1,283 @@
+.main-page{
+    margin-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Popular Dish */
+
+.popular-dishes {
+    display: flex;
+    gap: 1rem;
+}
+#popular-dish{
+    border-radius: 50%;
+    overflow: hidden;
+    border: rgb(255,165,63) 3px solid;
+    padding: 5px;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    transition: all .3s ease;
+}
+
+
+#p-Dish-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+#popular-dish:hover #p-Dish-img {
+    opacity: 1; 
+    transition: all .3s ease;
+
+}
+
+#p-Dish-txt{
+    position: absolute;
+    top: 50%;
+    left : 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/* Dish Card */
+
+.dish-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-block: 1rem;
+}
+
+.recommended >h2{
+    font-size: 2rem;
+}
+.menu{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: .5rem;
+    padding-inline: 1rem;
+}
+
+.dish-card{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid rgb(223, 218, 218);
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s ease;
+    z-index: 0;
+}
+
+.dish-card:hover {
+    background-color: rgb(225, 234, 242);
+    cursor: context-menu;
+}
+
+.title-rating{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-rating h1{
+    font-size: 1.5rem;
+}
+
+#rating{
+    background-color: rgb(81,196,82);
+    color: white;
+    padding: .2rem;
+    padding-inline: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    border-radius: 5px;
+}
+
+.equipments-ingridients{
+    display: flex;
+    align-items: center;
+    margin-block: 1rem ;
+}
+
+
+.equipments{
+    display: flex;
+    gap: 1rem;
+    padding-inline-end: 1rem;
+    border-right: 1px black solid;
+}
+
+.equipments-ingridients .ingredients{
+    padding-inline-start: 1rem;
+}
+
+.equipment{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipment p{
+    font-size: .7rem;
+}
+
+
+.ingredients a{
+    color: rgb(235, 141, 33) ;
+    text-decoration: none;
+}
+
+.discription{
+    font-size: 1rem;
+    color: rgb(152,152,152);
+    font-weight: 400;
+}
+
+
+.dish-image{
+    width: 12rem;
+    height: 8rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dish-image img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.add-btn{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: .3rem;
+    width: 3rem;
+    border: 1px solid rgb(255,165,63) ;
+    position: absolute;
+    bottom:-13px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+/* food-cattegorie */
+.food-categories{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.food-categorie{
+    border-radius: 50px;
+    border: 1px solid rgb(204, 201, 201);
+    padding-inline: 1rem;
+    padding-block: .3rem;
+    /* width: 3rem; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.food-categorie.active{
+    border: 2px solid rgb(255,165,63);
+    font-weight: 600;
+    background-color: rgba(247, 150, 39, 0.111);
+    color: rgb(248, 148, 34);
+}
+
+/* date-time card */
+
+.date-time-card{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgb(157, 153, 153);
+    margin-block: 1rem;
+}
+
+
+/* cart popup */
+
+.cartPopUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1rem;
+    position: fixed;
+    left : 50%;
+    bottom: 1rem;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.cartPopUp a{
+    color: white;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb(250, 255, 253);
+    border-bottom: 1px solid rgb(103, 100, 100);
+    position: sticky;
+    top: 0px;
+}
+
+nav h1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: brown;
+}
+nav>a{
+    padding-left: 5rem;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.active{
+    color: rgb(5, 5, 184);
+}
